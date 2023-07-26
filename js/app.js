@@ -12,23 +12,38 @@ function crearUsuario(usuario,callback){
 }
 
 console.log(crearUsuario('Leonel', saludarUsuario));
-
-
-
-//Callback
-let profesores = ['Leonel','Belen','Rocio','Milena'];
-let saludosProfesores = [];
-
-profesores.forEach(function(elemento, indice){
-    saludosProfesores.push(`Posicion ${indice} - Docente ${elemento}`)
-});
-
-console.log(saludosProfesores);
 */
 
 
+//Callback
+//let profesores = ['Leonel','Belen','Rocio','Milena'];
+//let saludosProfesores = [];
+
+//profesores.forEach(function(elemento, indice){
+//    saludosProfesores.push(`Posicion ${indice} - Docente ${elemento}`)
+//});
+
+//console.log(saludosProfesores);
 
 const profesores =[{
+    nombre:'Leonel',
+    edad: 30,
+    profesion: 'Profesor'
+    },
+    {
+    nombre:'Cinthia',
+    edad: 31,
+    profesion:'Coordinadora'
+    }]
+
+const saludarProfesores = profesores.map((nombreProfe) => `Hola Profe ${nombreProfe.nombre}`);
+console.log(saludarProfesores);
+
+
+
+
+
+/*const profesores =[{
 nombre:'Leonel',
 edad: 30,
 profesion: 'Profesor'
@@ -54,3 +69,5 @@ return(`<h2>Bienvenidos a Academia Numen<h2>
 <p> En esta ocasion quiero presentarles a ${elemento.nombre} quien
 sera su ${elemento.profesion} a lo largo de este curso.</p>`)
 });
+
+*/
