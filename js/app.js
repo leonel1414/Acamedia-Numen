@@ -34,7 +34,7 @@ const profesores =[{
     nombre:'Cinthia',
     edad: 31,
     profesion:'Coordinadora'
-    }]
+    }];
 
 const saludarProfesores = profesores.map((nombreProfe) => `Hola Profe ${nombreProfe.nombre}`);
 console.log(saludarProfesores);
