@@ -36,8 +36,8 @@ const profesores =[{
     profesion:'Coordinadora'
     }];
 
-//const saludarProfesores = profesores.map((nombreProfe) => `<h2>Bievenidos !</h2> 
-//<p>Hola Profe <b>${nombreProfe.nombre}</b></p>`);
+const saludarProfesores = profesores.map((nombreProfe) => `<h2>Bievenidos !</h2> 
+<p>Hola Profe <b>${nombreProfe.nombre}</b></p>`);
 
 //console.log(saludarProfesores);
 //document.write(saludarProfesores);
