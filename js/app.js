@@ -36,9 +36,14 @@ const profesores =[{
     profesion:'Coordinadora'
     }];
 
-const saludarProfesores = profesores.map((nombreProfe) => `Hola Profe ${nombreProfe.nombre}`);
-console.log(saludarProfesores);
+//const saludarProfesores = profesores.map((nombreProfe) => `<h2>Bievenidos !</h2> 
+//<p>Hola Profe <b>${nombreProfe.nombre}</b></p>`);
 
+//console.log(saludarProfesores);
+//document.write(saludarProfesores);
+
+const contenedorPrincipal = document.getElementById('contenedorPrincipal');
+contenedorPrincipal.innerHTML = saludarProfesores.join('');
 
 
 
